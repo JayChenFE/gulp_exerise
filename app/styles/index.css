@@ -1,0 +1,57 @@
+html,
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0; }
+
+ul,
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #666; }
+
+/* Basic */
+html,
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Microsoft YaHei", tahoma, arial, "Hiragino Sans GB", sans-serif; }
+
+.layout {
+  margin: 0 auto;
+  width: 600px; }
+
+header .layout {
+  display: flex;
+  align-items: center; }
+
+header .logo {
+  float: left;
+  font-size: 30px;
+  line-height: 50px; }
+
+header .navbar {
+  margin-left: 40px;
+  display: flex; }
+
+header .navbar li {
+  margin-right: 15px;
+  position: relative; }
+
+header .navbar .drop-list {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: white;
+  display: none; }
+
+header .navbar > li:hover .drop-list {
+  display: block; }
+
+header .navbar .drop-list li {
+  line-height: 1;
+  padding: 10px;
+  border-bottom: 1px dashed; }
