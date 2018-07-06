@@ -28,13 +28,20 @@ body {
 
 .layout {
     margin: 0 auto;
-    width: 600px;
+    width: 1000px;
 }
 
-header .layout {
+.btn {
+    display: inline-block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+header>div {
     display: flex;
     align-items: center;
-
 }
 
 header .logo {
@@ -42,12 +49,13 @@ header .logo {
     font-size: 30px;
     line-height: 50px;
 }
+
 header .navbar {
     margin-left: 40px;
     display: flex;
 }
 
-header .navbar li{
+header .navbar li {
     margin-right: 15px;
     position: relative;
 }
@@ -59,127 +67,81 @@ header .navbar .drop-list {
     background: white;
     display: none;
 }
+
 header .navbar>li:hover .drop-list {
     display: block;
 }
+
 header .navbar .drop-list li {
     line-height: 1;
     padding: 10px;
     border-bottom: 1px dashed;
 }
 
-// .clearfix:after {
-//     display: block;
-//     clear: both;
-//     content: '';
-// }
-// .clearfix {
-//     *zoom: 1;
-// }
-// .btn {
-//     display: inline-block;
-//     margin: 0 auto;
-//     border: 1px solid #ccc;
-//     border-radius: 4px;
-//     padding: 5px 10px;
-// }
-// /* Header */
-// header .logo {
-//     float: left;
-//     font-size: 30px;
-//     line-height: 50px;
-// }
-// header .navbar {
-//     float: left;
-//     margin-left: 30px;
-// }
-// header .navbar>li {
-//     float: left;
-//     height: 50px;
-//     line-height: 50px;
-//     padding: 0 10px;
-//     position: relative;
-// }
-// header .navbar .drop-list {
-//     position: absolute;
-//     left: 0;
-//     top: 100%;
-//     background: white;
-//     display: none;
-// }
-// header .navbar>li:hover .drop-list {
-//     display: block;
-// }
-// header .navbar .drop-list li {
-//     line-height: 1;
-//     padding: 10px;
-//     border-bottom: 1px dashed;
-// }
-// header .navbar .drop-list li:last-child {
-//     border: none;
-// }
-// header .navbar .drop-list li:hover {
-//     background: #ccc;
-// }
-// header .navbar>li:hover .drop-list {
-//     display: block;
-// }
-// /* Content */
-// .brief-introduction {
-//     padding: 10px 0;
-//     color: white;
-//     background: #b84d45;
-// }
-// .breadcrumb {
-//     margin-top: 30px;
-//     border-radius: 4px;
-//     background: #ddd;
-// }
-// .breadcrumb>ul {
-//     padding: 10px;
-// }
-// .breadcrumb li {
-//     display: inline-block;
-// }
-// .breadcrumb li:first-child a {
-//     color: red;
-// }
-// .portfolio {
-//     margin-top: 30px;
-// }
-// .portfolio>ul {
-//     margin-left: -47px;
-// }
-// .portfolio>ul>li {
-//     float: left;
-//     margin-left: 47px;
-//     margin-bottom: 30px;
-//     border: 1px solid #bbb;
-//     padding-bottom: 10px;
-//     text-align: center;
-// }
-// .portfolio>ul>li img {
-//     width: 300px;
-// }
-// .portfolio>ul>li h1,
-// .portfolio>ul>li p {
-//     margin: 0;
-//     padding: 5px 10px;
-//     text-align: left;
-// }
-// .about-me {
-//     padding: 10px 0;
-//     text-align: center;
-//     color: white;
-//     background: #b84d45;
-// }
-// .about-me a.btn {
-//     color: white;
-// }
-// /* Footer */
-// footer p {
-//     margin: 30px 0;
-//     border-top: 1px solid #eee;
-//     padding-top: 30px;
-//     text-align: center;
-// }
+main .brief-introduction {
+    padding: 10px 0;
+    color: white;
+    background: #b84d45;
+}
+
+main .breadcrumb {
+    //  padding:10px 0;
+    margin: 30px auto;
+    background: #ddd;
+    border-radius: 6px;
+}
+
+main .breadcrumb ul {
+    padding: 10px;
+    display: flex;
+}
+
+main .breadcrumb ul li {
+    margin-right: 5px;
+}
+
+main .breadcrumb ul li:first-child a {
+    color: red;
+}
+
+main .portfolio ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .portfolio ul li img {
+    width: 300px;
+}
+
+.portfolio>ul>li h1,
+.portfolio>ul>li p {
+    margin: 0;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+main .portfolio ul li {
+    text-align: center;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+main .about-me {
+    background: #b84d45;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+}
+
+main .about-me .btn {
+    color: white;
+}
+
+footer.layout {
+    margin-top: 30px;
+    padding-top: 10px;
+    text-align: center;
+    border-top: 1px solid #eee;
+}

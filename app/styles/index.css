@@ -22,9 +22,16 @@ body {
 
 .layout {
   margin: 0 auto;
-  width: 600px; }
+  width: 1000px; }
 
-header .layout {
+.btn {
+  display: inline-block;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 10px; }
+
+header > div {
   display: flex;
   align-items: center; }
 
@@ -55,3 +62,58 @@ header .navbar .drop-list li {
   line-height: 1;
   padding: 10px;
   border-bottom: 1px dashed; }
+
+main .brief-introduction {
+  padding: 10px 0;
+  color: white;
+  background: #b84d45; }
+
+main .breadcrumb {
+  margin: 30px auto;
+  background: #ddd;
+  border-radius: 6px; }
+
+main .breadcrumb ul {
+  padding: 10px;
+  display: flex; }
+
+main .breadcrumb ul li {
+  margin-right: 5px; }
+
+main .breadcrumb ul li:first-child a {
+  color: red; }
+
+main .portfolio ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+main .portfolio ul li img {
+  width: 300px; }
+
+.portfolio > ul > li h1,
+.portfolio > ul > li p {
+  margin: 0;
+  padding: 5px 10px;
+  text-align: left; }
+
+main .portfolio ul li {
+  text-align: center;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  padding-bottom: 10px; }
+
+main .about-me {
+  background: #b84d45;
+  padding: 10px 0;
+  color: white;
+  text-align: center; }
+
+main .about-me .btn {
+  color: white; }
+
+footer.layout {
+  margin-top: 30px;
+  padding-top: 10px;
+  text-align: center;
+  border-top: 1px solid #eee; }
